@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operasi Bayang — Game Stealth</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05070d;
+    color: #e2e8f0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: 10px 0 8px;
+    color: #22d3ee;
+  }
+  canvas {
+    display: block;
+    width: 960px;
+    max-width: 96vw;
+    height: auto;
+    border: 2px solid #1e293b;
+    border-radius: 6px;
+    background: #0a0e18;
+  }
+  p.help {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 10px 0 14px;
+    text-align: center;
+  }
+  p.help b { color: #e2e8f0; }
+</style>
+</head>
+<body>
+<h1>OPERASI BAYANG</h1>
+<canvas id="game" width="960" height="640"></canvas>
+<p class="help"><b>WASD / Panah</b> bergerak &nbsp;·&nbsp; <b>Shift</b> menyelinap &nbsp;·&nbsp; <b>R</b> ulangi level &nbsp;·&nbsp; <b>M</b> suara &nbsp;·&nbsp; <b>Enter</b> mulai — curi semua jarahan lalu capai EXIT tanpa ketahuan.</p>
+<script src="js/rng.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/levels.js"></script>
+<script src="js/guard.js"></script>
+<script src="js/player.js"></script>
+<script src="js/render.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
